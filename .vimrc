@@ -15,4 +15,18 @@ let skip_defaults_vim=1
 
 syntax on
 set nu!
+
+" show existing tab with 4 spaces width
 set tabstop=4 
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
+" remove tab or tab spaces
+set softtabstop=4
+
+" hilight seaerch word
+set hlsearch
+
+" auto indent
+set autoindent
