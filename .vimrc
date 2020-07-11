@@ -13,6 +13,7 @@ au BufWrite /private/etc/pw.* set nowritebackup nobackup
 let skip_defaults_vim=1
 
 syntax on
+set termguicolors
 set number
 set relativenumber
 
@@ -37,9 +38,6 @@ set hidden
 " it contains any capital letters. This makes searching more convenient.
 set ignorecase
 set smartcase
-
-" Enable searching as you type, rather than waiting till you press enter.
-set incsearch
 
 " Unbind some useless/annoying default key bindings.
 nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
@@ -74,6 +72,8 @@ set softtabstop=4
 
 " hilight seaerch word
 set hlsearch
+" Enable searching as you type, rather than waiting till you press enter.
+set incsearch
 
 " auto indent
 set autoindent
