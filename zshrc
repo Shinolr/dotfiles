@@ -101,3 +101,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Custom tmux aliases
 alias tls="tmux ls"
+#export PATH="/usr/local/sbin:$PATH"
+
+eval "$(rbenv init -)"
+eval "$(pyenv init -)"
+export PATH="/usr/local/sbin:$PATH"
