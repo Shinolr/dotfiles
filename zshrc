@@ -2,8 +2,8 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/shinolr/Formula/oh-my-zsh"
-export JENKINS_HOME="/Users/shinolr/Formula/jenkins"
+export ZSH="$HOME/dotfiles/oh-my-zsh"
+export JENKINS_HOME="$HOME/Formula/jenkins"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -69,7 +69,7 @@ ZSH_THEME="lambda-mod"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z zsh-autosuggestions)
+plugins=(git z)
 
 source $ZSH/oh-my-zsh.sh
 
