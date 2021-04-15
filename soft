@@ -1,0 +1,14 @@
+#!/bin/bash
+
+DOTFILES=$HOME/dotfiles
+ALLNAMES=$(ls -p | grep -v / | tr '\n' ' ')
+
+Soft () {
+    for NAME in $@
+    do
+        ln -s $DOTFILES/$NAME $HOME/.$NAME
+    done
+    rm $HOME/.$0
+}
+
+Soft $ALLNAMES
