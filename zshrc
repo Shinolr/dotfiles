@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/dotfiles/oh-my-zsh"
+export ZSH="$HOME/Formula/oh-my-zsh"
 export JENKINS_HOME="$HOME/Formula/jenkins"
 
 # Set name of the theme to load --- if set to "random", it will
