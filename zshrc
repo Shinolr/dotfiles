@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Custom tmux aliases
-alias tls="tmux ls"
+alias tl="tmux ls"
 
 export PATH="/usr/local/sbin:$PATH"
 
