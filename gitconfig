@@ -5,3 +5,7 @@
 	unstage = reset HEAD --
 [pull]
 	rebase = true
+[core]
+	autocrlf = input
+[init]
+	defaultBranch = main
