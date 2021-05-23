@@ -11,7 +11,7 @@ export ZSH="$HOME/Formula/oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="lambda-mod"
 
-plugins=(git z)
+plugins=(git z vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
