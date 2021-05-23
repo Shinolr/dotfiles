@@ -13,18 +13,15 @@ au BufWrite /private/etc/pw.* set nowritebackup nobackup
 let skip_defaults_vim=1
 
 syntax on
+" filetype on
+" filetype indent on
+" filetype plugin on
 
-if exists('+termguicolors')
-  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
-endif
-set termguicolors
 set number
 set relativenumber
 
 " Always show the status line at the bottom, even if you only have one window open.
-set laststatus=2
+" set laststatus=2
 
 " The backspace key has slightly unintuitive behavior by default. For example,
 " by default, you can't backspace before the insertion point set with 'i'.
@@ -68,7 +65,7 @@ inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
 " show existing tab with 4 spaces width
-set tabstop=4 
+set tabstop=4
 " when indenting with '>', use 4 spaces width
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
@@ -87,6 +84,21 @@ set autoindent
 call plug#begin('~/.vim/plugged')
 
 Plug 'https://github.com/vim-ruby/vim-ruby'
+Plug 'git@github.com:tpope/vim-surround.git'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
+set t_Co=256
+set cursorline
+colorscheme onehalfdark
+" let g:airline_theme='onehalfdark'
+" lightline
+" let g:lightline = { 'colorscheme': 'onehalfdark' }
 
