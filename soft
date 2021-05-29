@@ -1,14 +1,18 @@
 #!/bin/bash
 
-DOTFILES=$HOME/dotfiles
-ALLNAMES=$(ls -p | grep -v / | tr '\n' ' ')
+source_path=$HOME/Workspace/dotfiles
+all_names=$(ls -p | grep -v / | grep -v soft | tr '\n' ' ')
 
-Soft () {
-    for NAME in $@
+soft () {
+    for name in $@
     do
-        ln -s $DOTFILES/$NAME $HOME/.$NAME
+        #ln -s $source_path/$name $HOME/.$name
+        if [[ $name == "vimrc" ]]; then
+            ln -s $source_path/$name $HOME/.config/nvim/init.vim
+        else
+            ln -s $source_path/$name $HOME/.$name
+        fi
     done
-    rm $HOME/.$0
 }
 
-Soft $ALLNAMES
+soft $all_names
