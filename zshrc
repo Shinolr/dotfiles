@@ -21,6 +21,8 @@ alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Custom tmux aliases
 alias tl="tmux ls"
+alias ta="tmux a"
+alias vim="nvim"
 
 # export PATH="/usr/local/sbin:$PATH"
 
@@ -28,8 +30,6 @@ alias tl="tmux ls"
 eval "$(rbenv init -)"
 # pyenv
 eval "$(pyenv init -)"
-
-# Xcode losing syntax highlight
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
