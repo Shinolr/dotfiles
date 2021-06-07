@@ -1,34 +1,10 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/Formula/oh-my-zsh"
-# export JENKINS_HOME="$HOME/Formula/jenkins"
-
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="lambda-mod"
-
-plugins=(git z vi-mode)
-
-source $ZSH/oh-my-zsh.sh
-
-export LANG=en_US.UTF-8
-
-alias ohmyzsh="mate ~/.oh-my-zsh"
-
 # Custom tmux aliases
 alias tl="tmux ls"
 alias ta="tmux a"
 alias vim="nvim"
 
-# export PATH="/usr/local/sbin:$PATH"
-
-# rbenv
+# xxenv
 eval "$(rbenv init -)"
-# pyenv
 eval "$(pyenv init -)"
 
 ### Added by Zinit's installer
@@ -43,7 +19,21 @@ fi
 source "$HOME/.zinit/bin/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
-### End of Zinit's installer chunk
 
-zinit light zsh-users/zsh-autosuggestions
-zinit light zsh-users/zsh-syntax-highlighting
+# Load a few important annexes, without Turbo
+# (this is currently required for annexes)
+zinit light-mode for \
+    rupa/z \
+    zsh-users/zsh-autosuggestions \
+    zdharma/fast-syntax-highlighting
+
+zinit snippet OMZL::clipboard.zsh
+zinit snippet OMZL::completion.zsh
+zinit snippet OMZL::history.zsh
+zinit snippet OMZL::key-bindings.zsh
+zinit snippet OMZL::git.zsh
+zinit snippet OMZP::git/git.plugin.zsh
+zinit snippet OMZL::theme-and-appearance.zsh
+zinit light $HOME/Workspace/dotfiles/themes
+
+### End of Zinit's installer chunk
