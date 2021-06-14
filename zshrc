@@ -32,8 +32,9 @@ zinit snippet OMZL::completion.zsh
 zinit snippet OMZL::history.zsh
 zinit snippet OMZL::key-bindings.zsh
 zinit snippet OMZL::git.zsh
-zinit snippet OMZP::git/git.plugin.zsh
 zinit snippet OMZL::theme-and-appearance.zsh
+zinit snippet OMZL::directories.zsh
+zinit snippet OMZP::git/git.plugin.zsh
 zinit light $HOME/Workspace/dotfiles/themes
 
 ### End of Zinit's installer chunk
