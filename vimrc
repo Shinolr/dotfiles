@@ -89,6 +89,7 @@ Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
 Plug 'rust-lang/rust.vim'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
 
 call plug#end()
 if exists('+termguicolors')
