@@ -38,3 +38,6 @@ zinit snippet OMZP::git/git.plugin.zsh
 zinit light $HOME/Workspace/dotfiles/themes
 
 ### End of Zinit's installer chunk
+
+autoload -Uz compinit
+compinit
