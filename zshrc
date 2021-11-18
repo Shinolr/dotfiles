@@ -26,7 +26,7 @@ autoload -Uz _zinit
 zinit light-mode for \
     rupa/z \
     zsh-users/zsh-autosuggestions \
-   zdharma-continuum/fast-syntax-highlighting
+    zdharma-continuum/fast-syntax-highlighting
 
 zinit snippet OMZL::clipboard.zsh
 zinit snippet OMZL::completion.zsh
@@ -41,4 +41,4 @@ zinit light $HOME/Developer/dotfiles/themes
 ### End of Zinit's installer chunk
 
 autoload -Uz compinit
-compinit 
+compinit
