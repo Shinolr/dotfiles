@@ -84,7 +84,7 @@ set autoindent
 call plug#begin('~/.vim/plugged')
 
 Plug 'https://github.com/vim-ruby/vim-ruby'
-Plug 'git@github.com:tpope/vim-surround.git'
+Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
