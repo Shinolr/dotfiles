@@ -6,8 +6,7 @@ alias vim="nvim"
 # xxenv
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
-
-
+eval "$(nodenv init -)"
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
