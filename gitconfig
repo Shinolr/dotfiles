@@ -1,11 +1,11 @@
 [user]
-	name = Shinolr
-	email = wyqbeta@gmail.com
+    name = Shinolr
+    email = wyqbeta@gmail.com
 [alias]
-	unstage = reset HEAD --
+    unstage = reset HEAD --
 [pull]
-	rebase = true
+    rebase = true
 [core]
-	autocrlf = input
+    autocrlf = input
 [init]
-	defaultBranch = main
+    defaultBranch = main
