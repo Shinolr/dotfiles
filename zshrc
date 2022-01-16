@@ -2,6 +2,7 @@
 alias tl="tmux ls"
 alias ta="tmux a"
 alias vim="nvim"
+alias vi="nvim"
 
 # xxenv
 eval "$(rbenv init -)"
