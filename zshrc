@@ -37,7 +37,7 @@ zinit snippet OMZL::git.zsh
 zinit snippet OMZL::theme-and-appearance.zsh
 zinit snippet OMZL::directories.zsh
 zinit snippet OMZP::git/git.plugin.zsh
-zinit light $HOME/Dev/dotfiles/themes
+zinit light $HOME/dev/dotfiles/themes
 
 ### End of Zinit's installer chunk
 

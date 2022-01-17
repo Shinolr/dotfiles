@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source_path=$HOME/Workspace/dotfiles
+source_path=$HOME/Dev/dotfiles
 all_names=$(ls -p | grep -v / | grep -v soft | tr '\n' ' ')
 
 soft () {
