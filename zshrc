@@ -10,9 +10,11 @@ alias tl="tmux ls"
 alias ta="tmux a"
 alias vim="nvim"
 alias vi="nvim"
+alias sed="gsed"
+alias cat="bat"
+alias rm="trash"
 
 # xxenv
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
-eval "$(nodenv init -)"
 
