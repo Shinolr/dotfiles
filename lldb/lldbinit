@@ -1,3 +1,3 @@
-command script import /Users/ywang/.lldb/init_module.py
+command script import ~/dev/dotfiles/lldb/init_module.py
 
-script fbchisellldb.loadCommandsInDirectory('/Users/ywang/.lldb/custom/')
+script fbchisellldb.loadCommandsInDirectory(f"{os.getenv('HOME')}/dev/dotfiles/lldb/custom/")
