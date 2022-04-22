@@ -1,3 +1,0 @@
-command script import /usr/local/opt/chisel/libexec/fbchisellldb.py
-
-script fbchisellldb.loadCommandsInDirectory('/usr/local/opt/chisel/libexec/custom')
