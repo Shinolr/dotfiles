@@ -1,6 +1,6 @@
 [user]
-    name = Shinolr
-    email = wyqbeta@gmail.com
+	name = shinolr
+	email = wyqbeta+github@gmail.com
 [alias]
     unstage = reset HEAD --
 [pull]
