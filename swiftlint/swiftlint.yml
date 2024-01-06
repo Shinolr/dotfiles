@@ -1,0 +1,23 @@
+disabled_rules:
+  - trailing_comma
+  - force_try
+  - force_cast
+  - function_body_length
+
+identifier_name:
+  allowed_symbols:
+    - _
+  excluded:
+    - h
+    - i
+    - id
+    - p
+    - w
+    - x
+    - y
+
+type_name:
+  excluded:
+    - T
+    - U
+    - ID
